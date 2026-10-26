@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "cmd",
+      "args": [
+        "/c", "npx", "-y", "@playwright/mcp@0.0.83",
+        "--headless",
+        "--isolated",
+        "--secrets", ".env.secrets",
+        "--test-id-attribute", "data-testid",
+        "--console-level", "error"
+      ]
+    },
+    "figma": {
+      "command": "cmd",
+      "args": [
+        "/c", "npx", "-y", "figma-developer-mcp@0.13.2",
+        "--stdio",
+        "--env", ".env.secrets",
+        "--image-dir", ".tmp",
+        "--no-telemetry"
+      ]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "qa-agents",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-agent QA pipeline for Claude Code",
+  "scripts": {
+    "tc:write": "node scripts/tc-write.js",
+    "tc:read": "node scripts/tc-read.js",
+    "tc:review": "node scripts/tc-review.js",
+    "tc:result": "node scripts/tc-result.js",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "dotenv": "18.0.7",
+    "exceljs": "4.4.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.0"
+  }
+}

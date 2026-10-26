@@ -1,0 +1,12 @@
+.env
+.env.secrets
+node_modules/
+data/outputs/4-automation/.results/
+data/outputs/4-automation/.report/
+data/outputs/4-automation/.auth/
+.playwright-mcp/
+.tmp/
+*.log
+.DS_Store
+Thumbs.db
+~$*.xlsx
